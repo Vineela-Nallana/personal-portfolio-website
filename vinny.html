@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vineela Nallana - Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="chatbot.css">
+	
+	
+	
+</head>
+<body>
+	<div class="welcome-page">
+		<div class="welcome-page-header"> <h1>hey! Vineela welcomes you!</h1>  
+		</div>
+           <h1 class="my-name"></h1>
+		
+		  
+		 </div>
+
+	   <div class="navbar">
+		<a href="#home">About Me</a>
+		<a href="#education">Education</a>
+		<a href="#Acheivements1">Acheivements</a>
+        <a href="#skills">Skills</a>
+		<a href="#awards">Courses</a>
+		<a href="#contact">Contact</a>
+	
+	</div>
+		
+
+	<section>
+        <div class="about-me" id="home">
+			
+			<div class="about-text">
+				<p id="rcorners">Hi, I am Vineela ,a tech enthusiast with excellent problem solving skills who works profoundly well with group of people and passionate in coding.Self motivated, passionate, fresher, looking for an opportunity to work in a challenging organization to utilise my knowledge and skills to work for the growth of the organization and all round improvement myself.I am a passionate individual with great interpersonal and communication skills.An Engineering graduate and a quick learner who genuinely wants to develop necessary skills for coding challenges, web and app development. MY Goals -To improve my capabilities and skills and be  a pro in software development.An extremely organised, empathetic and resourceful individual seeking for a challenging career that demands the best of my professional ability in terms of technical and analytical skills that helps the growth of the organization.</p>
+			
+				</div>
+			<style>
+				#rcorners {
+					border-radius: 25px;
+					background: url(https://wallpaperaccess.com/full/7019280.jpg);
+					background-position: left top;
+					background-repeat: no-repeat;
+					padding: 20px; 
+					width: 1100px;
+					height: 500px;  
+					margin-right: 40px;
+				  }
+			</style>
+			<div class="about-image">
+				<img src="/picture.jpg" alt="My Photo">
+			</div>
+			
+		</div>
+	
+		<div class="education" id="education">
+			<div class="education-header">
+			  <h2>Education</h2>
+			</div>
+			
+			<div class="education-content">
+				
+			  <div class="school-box">
+				<h2>National Institute Of Technology,Raipur</h2>
+				<h3>B.Tech in Electrical Engineering 2020-2024 with cpi 9.01</h3>
+			 
+			</div>
+			  <div class="school-box">
+				<h2>12 Boards</h2>
+				<h3>Sri Chaitanya Educational Institutions secured 973/1000 marks (June 2018-May 2020)</h3>
+				
+				
+			</div>
+				<div class="school-box">
+					<h2>CBSE-Tenth standard</h2>
+					<h3>Jawahar Navodaya Vidyalaya Srikakulam School,secured 478/500 marks </h3>
+				  </div>
+			  
+			</div>
+		  </div>
+		  	
+		<div class="Acheivements" id="Acheivements1" >
+			<div class="h2"><h1>My Acheivemets</h1></div>
+				<div class="container">
+					<div class="bar"><p>Certificate of Merit for outstanding academic performance, being among the top 0.1% from CBSE DELHI.</p></div>
+					<div class="bar"><p>Selected for Sgfi twice in gymnastics,Cracked jee mains, Executive at EEA.</p></div>
+					<div class="bar"><p>Scholar of FFE & ONGC</p></div>
+					<div class="bar"><p> Secured certificates in programming languages and web development.</p></div>
+					<div class="bar"><p>Expertise in interpersonal and soft skills.</p></div>
+					
+				</div>
+			
+		</div>
+
+	
+		<div class="skills" id="skills">
+			<div class="skills-header">
+				<h2>Skills</h2>
+			  </div>
+			
+			<ul>
+				<li>DSA solved 500+ problems in the coding ninjas platform </li>
+				<li>DBMS - understood the backend process and queries</li>
+				<li>cpp - Full profiency in programming language with accuracy</li>
+				<li>HTML -expert level,created webpages for the student welfare</li>
+				<li>CSS-Full proficiency in applying styles in a charming way </li>
+				<li>JavaScript-completed OOPS concept in a practical way</li>
+				<li>Artificial Intelligence and Machine learning - An abstract idea</li>
+				<li>Wordpress development- Website design,layouts in  open source</li>
+				<li>SOFT SKILLS-Good coomunication, Ambitious,and Innovative</li>
+				<li>Information retrieval techniques and basic NLP Techniques.</li>
+			    <li>Python Open CV-Built a project on face recognization</li>
+			</ul>
+			
+	</section>
+	
+	<div class="slider" id="awards">
+		<div class="slides">
+		  <div class="slide">
+			<div class="course1"> <h1>COURSE 1- TECHNICAL </h1><br>
+				<hr>
+				<hr><br>
+				<h1>Data structures and algorithms under the supervision of coding mafia </h1><br>
+				<h1>C++ from -Programming hub</h1><br>
+				<h1>Geeks for geeks bootcamp on DSA</h1><br>
+				<h1>Python bootcamp conducted by Shape AI </h1>
+			</div>
+		
+		  </div>
+		  
+		  
+		  <div class="slide">
+			<div class="course1"> <h1>COURSE 2-ELECTRICAL </h1><br>
+				<hr><hr><br>
+				<h1>Generation of Electrical Energy undersupervision of Dr.M.bishwal </h1>
+				<h1>Electrical power systems authorized by The State University of NEWYORK </h1><br> 
+				<h1>Development  and storage of Electrical energy systems from coursera.</h1><br>
+				<h1>Utilization of Wind-Renewable energy authorized by University of Buffalo</h1>
+			</div>
+	  </div>
+			
+		  </div>
+		 
+		</div>
+	  
+		<div class="navigation">
+		  <button class="prev">&#60;</button>
+		  <button class="next">&#62;</button>
+		</div>
+	  </div>
+	
+<script>
+	const slides = document.querySelectorAll('.slide');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+let currentSlide = 0;
+
+// Show the first slide and hide the rest
+slides[currentSlide].classList.add('active');
+
+// Function to show the current slide
+function showSlide() {
+  slides.forEach(slide => slide.classList.remove('active'));
+  slides[currentSlide].classList.add('active');
+}
+
+// Event listener for the previous button
+prevBtn.addEventListener('click', () => {
+  currentSlide--;
+  if (currentSlide < 0) {
+    currentSlide = slides.length - 1;
+  }
+  showSlide();
+});
+
+// Event listener for the next button
+nextBtn.addEventListener('click', () => {
+  currentSlide++;
+  if (currentSlide > slides.length - 1) {
+    currentSlide = 0;
+  }
+  showSlide();
+});
+
+</script>  
+	<section id="contact">
+		<h2><span>Contact me</span></h2>
+		
+		<form>
+		  <label for="name">Name:</label>
+		  <input type="text" id="name" name="name" required />
+  
+		  <label for="email">Email:</label>
+		  <input type="email" id="email" name="email" required />
+  
+		  <label for="message">Message:</label>
+		  <textarea id="message" name="message" required></textarea>
+  
+		  <button type="submit">Send Message</button>
+		</form>
+		<section>
+
+
+   
+			<style>
+			  /* add some basic styles */
+			
+			
+			  hehe{
+				list-style-type:none;
+				padding: 10px;
+				margin: 10px;
+				display: flex;
+				justify-content: center;
+				font-size: 100px;
+				
+			  }
+			  
+			  a{
+				text-decoration: none;
+				color: #b3eaf4;
+			  font-size: 30px;
+				padding: 10px 20px;
+				border-radius: 2px;
+				transition: all 0.3s ease;
+				text-decoration: none;
+			  }
+			  a:hover {
+				background-color: #fefbfb;
+				color: #121111;
+				text-decoration: none;
+			  }
+			</style>
+<div class="hehe">
+	<ul>
+		
+		<li><a href="mailto:your-email@example.com">vineelasrichaitanya@gmail.com</a></li>
+		<br>
+		<li><a href="tel:+1234567890">7382614686</a></li>
+		<br>
+		
+		<li><a href="https://www.codingninjas.com/codestudio/profile/Vineela_Nallana">Coding ninjas profile</a></li>
+		<br>
+		<li><a href="https://www.linkedin.com/in/vineela-nallana-194423207">LinkedIn-Vineela nallana</a></li>
+	  </ul>
+</div>
+			
+			  </section>
+	  </section>
+	
+</body>
+</html>
